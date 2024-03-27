@@ -2,7 +2,7 @@
 
 To install this Chrome extension manually, follow these steps:
 
-1. [Download the latest release](https://github.com/yourusername/yourrepository/releases/latest) of the extension from the releases page.
+1. [Download the latest release](https://github.com/oluku-project/code-snippet-enhancer.git/releases/latest) of the extension from the releases page.
 2. Extract the downloaded ZIP archive to a local directory on your computer.
 3. Open the Chrome browser and go to the Extensions page (`chrome://extensions/`).
 4. Enable Developer mode by toggling the switch in the top-right corner.
