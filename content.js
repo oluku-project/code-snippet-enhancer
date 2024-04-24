@@ -158,8 +158,15 @@ function addPrintButtonToContainers() {
 
           
           // Exclude specific elements during printing
-          var elementsToExclude = contentToPrint.querySelectorAll('.font-semibold.select-none, .flex-shrink-0.flex.flex-col.relative.items-end, .flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md, .mt-1.flex.justify-start.gap-3.empty\\:hidden');
-          elementsToExclude.forEach(function(element) {
+          var elementsToExclude = contentToPrint.querySelectorAll(
+            '.font-semibold.select-none, ' +
+              '.flex-shrink-0.flex.flex-col.relative.items-end, ' +
+              '.flex.items-center.relative.text-token-text-secondary.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md, ' +
+              '.mt-1.flex.gap-3.empty\\:hidden, ' +
+              '.icon-md' // Add the class of the SVG elements to exclude
+          );
+
+          elementsToExclude.forEach(function (element) {
             element.remove();
           });
 
